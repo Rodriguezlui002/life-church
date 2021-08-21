@@ -21,7 +21,8 @@ module.exports = {
       },
       screens: {
         'xs': '475px',
-      }
+        'xm': '725px',
+      },
     },
   },
   variants: {
@@ -29,7 +30,7 @@ module.exports = {
       boxShadow: ['hover', 'active'],
       scale: ['hover', 'active'],
       zIndex: ['hover', 'active']
-    },
+    }
   },
   plugins: [],
 }

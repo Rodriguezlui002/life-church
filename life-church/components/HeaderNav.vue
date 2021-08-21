@@ -15,19 +15,19 @@
                 <div class="hidden sm:block">
                     <ul class="flex text-gray-100 space-x-6 text-xl">
                         <li v-on:click="menuHandler"><NuxtLink to="/" :class="[$nuxt.$route.path === '/' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Home</NuxtLink></li>
-                        <li v-on:click="menuHandler"><NuxtLink to="/locations" :class="[$nuxt.$route.path === '/locations' ? ['bg-gray-700', 'py-1', 'px-2', 'rounded'] : '']">Locations</NuxtLink></li>
-                        <li v-on:click="menuHandler"><NuxtLink to="/about" :class="[$nuxt.$route.path === '/about' ? ['bg-gray-700', 'py-1', 'px-2', 'rounded'] : '']">About</NuxtLink></li>
-                        <li v-on:click="menuHandler"><NuxtLink to="/contact" :class="[$nuxt.$route.path === '/contact' ? ['bg-gray-700', 'py-1', 'px-2', 'rounded'] : '']">Contact</NuxtLink></li>
+                        <li v-on:click="menuHandler"><NuxtLink to="/locations" :class="[$nuxt.$route.path === '/locations' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Locations</NuxtLink></li>
+                        <li v-on:click="menuHandler"><NuxtLink to="/about" :class="[$nuxt.$route.path === '/about' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">About</NuxtLink></li>
+                        <li v-on:click="menuHandler"><NuxtLink to="/contact" :class="[$nuxt.$route.path === '/contact' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Contact</NuxtLink></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="sm:hidden fixed flex inset-x-0 top-28 py-6 mx-auto w-8/12 h-auto text-center bg-green-400 rounded"  :class="[ clicked ? 'opacity-100' : 'opacity-0' ]">
+        <div class="sm:hidden fixed flex inset-x-0 top-28 py-6 mx-auto w-8/12 h-auto text-center bg-life-dark rounded"  :class="[ clicked ? 'opacity-100' : 'opacity-0' ]">
                 <ul class="m-auto space-y-10 text-xl text-gray-100">
-                    <li v-on:click="clickHandler"><NuxtLink to="/" :class="[$nuxt.$route.path === '/' ? ['bg-gray-700', 'py-1', 'px-2', 'rounded'] : '']">Home</NuxtLink></li>
-                    <li v-on:click="clickHandler"><NuxtLink to="/locations" :class="[$nuxt.$route.path === '/locations' ? ['bg-gray-700', 'py-1', 'px-2', 'rounded'] : '']">Locations</NuxtLink></li>
-                    <li v-on:click="clickHandler"><NuxtLink to="/about">About</NuxtLink></li>
-                    <li v-on:click="clickHandler"><NuxtLink to="/about">Contact</NuxtLink></li>
+                    <li v-on:click="clickHandler"><NuxtLink to="/" :class="[$nuxt.$route.path === '/' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Home</NuxtLink></li>
+                    <li v-on:click="clickHandler"><NuxtLink to="/locations" :class="[$nuxt.$route.path === '/locations' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Locations</NuxtLink></li>
+                    <li v-on:click="clickHandler"><NuxtLink to="/about" :class="[$nuxt.$route.path === '/about' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">About</NuxtLink></li>
+                    <li v-on:click="clickHandler"><NuxtLink to="/contact" :class="[$nuxt.$route.path === '/contact' ? ['bg-life', 'py-1', 'px-2', 'rounded'] : '']">Contact</NuxtLink></li>
                 </ul>
             </div>
     </div>
