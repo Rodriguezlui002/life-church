@@ -1,10 +1,10 @@
 module.exports = {
   purge: [
     './components/**/*.{vue,js}',
-     './layouts/**/*.vue',
-     './pages/**/*.vue',
-     './plugins/**/*.{js,ts}',
-     './nuxt.config.{js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -23,6 +23,11 @@ module.exports = {
         'xs': '475px',
         'xm': '725px',
       },
+      height: {
+        'screen/50': '50vh',
+        'screen/60': '60vh',
+        'screen/80': '80vh'
+      }
     },
   },
   variants: {
